@@ -1,11 +1,11 @@
 # ecommerce-analysis
-# 🛒 Customer Analytics & Segmentation Project
+#  Customer Analytics & Segmentation Project
 
-## 📌 Project Overview
+##  Project Overview
 
 This project focuses on **customer analytics and segmentation** using real-world eCommerce data from the Olist dataset.
 
-The objective is to analyze customer distribution and behavior, and apply **Machine Learning (KMeans clustering)** to segment customers based on engagement patterns.
+The objective is to analyze customer distribution and behavior, and apply **Machine Learning  to segment customers based on engagement patterns.
 
 ---
 
