@@ -1,0 +1,13 @@
+/*Customer Segmentation*/
+
+SELECT 
+    customer_unique_id,
+    COUNT(order_id) AS frequency,
+    SUM(payment_value) AS monetary,
+    CASE 
+        WHEN SUM(payment_value) > 1000 THEN 'High Value'
+        WHEN SUM(payment_value) BETWEEN 500 AND 1000 THEN 'Medium Value'
+        ELSE 'Low Value'
+    END AS segment
+FROM ecommerce_data
+GROUP BY customer_unique_id;
