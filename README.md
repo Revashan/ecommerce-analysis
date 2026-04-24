@@ -39,6 +39,3 @@ Brazilian E-Commerce Dataset (Olist) from Kaggle.
 
 ##  Author
    REVATHY
-
-Your Name
-
