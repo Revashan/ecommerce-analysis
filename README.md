@@ -86,11 +86,65 @@ The `.pbix` file is available at `powerbi/dash.pbix`.
 3. Run `notebooks/datacleaning.ipynb` to reproduce the cleaned dataset
 4. Open `powerbi/dash.pbix` in Power BI Desktop to explore the dashboard
 
-   Key Business Insights
-1️⃣ Revenue Concentration
+  ## Key Business Insights
+   1. Revenue Concentration
 A small number of states contribute majority of total revenue
+ Insight: Business is geographically
 
-👉 Insight: Business is geographically
+2.Product Performance
+Few categories generate most revenue
+Long-tail categories contribute very little
+
+3.Customer Behavior
+Majority of customers are one-time buyers
+Repeat customers form a small but high-value segment
+
+4.Sales Trend
+Sales show seasonal spikes
+Certain months outperform significantly
+
+5.Revenue vs Orders
+High number of orders does not always mean high revenue
+
+## Advanced Insights
+1.Customer Segmentation
+
+Using clustering:
+
+## High-value customers
+Medium-value customers
+Low-value customers
+
+## Order Value Distribution
+Most orders are low to medium value
+Few high-value outliers
+
+## Business Recommendations
+🔹 1. Improve Customer Retention
+Launch loyalty programs
+Offer discounts for repeat purchases
+Personalized marketing campaigns
+
+2.Focus on High-Performing Regions
+Increase marketing in top states
+Expand logistics in high-demand areas
+
+3.Optimize Product Strategy
+Promote top-performing categories
+Reduce low-performing inventory
+
+4.Increase Average Order Value (AOV)
+Bundle products
+Offer free shipping above threshold
+Cross-sell related products
+
+5.Seasonal Campaign Planning
+Run promotions during peak months
+Prepare inventory in advance
+
+6.Target High-Value Customers
+VIP programs for top customers
+Exclusive deals
 
 
 ## Author
