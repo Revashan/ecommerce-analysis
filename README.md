@@ -1,41 +1,86 @@
-# ecommerce-analysis
+# Brazilian E-Commerce Analysis (Olist Dataset)
 
-# 🛒 E-Commerce Analytics Project
+A data analysis project built on the [Olist public e-commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), covering order processing, customer behavior, product performance, and payment trends across Brazil.
 
-##  Overview
+---
 
-This project analyzes eCommerce data to extract business insights, perform customer segmentation, and visualize sales trends.
+## Project Structure
 
-##  Dataset
+```
+├── data/
+│   ├── raw/                  # Original Olist CSV files
+│   └── processed/            # Cleaned and merged dataset
+├── notebooks/
+│   └── datacleaning.ipynb    # Data cleaning and preprocessing
+├── powerbi/
+│   └── dash.pbix             # Power BI dashboard file
+├── reports/
+│   └── datacleaning.html     # Exported notebook report
+└── sql/                      # SQL queries (in progress)
+```
 
-Brazilian E-Commerce Dataset (Olist) from Kaggle.
+---
 
-##  Tech Stack
+## Dataset
 
-* Python (Pandas, Matplotlib, Scikit-learn)
-* SQL
-* Power BI
+The raw data consists of 8 relational tables from Olist:
 
-##  Workflow
+| File | Description |
+|------|-------------|
+| `olist_customers_dataset.csv` | Customer location and ID info |
+| `olist_orders_dataset.csv` | Order status and timestamps |
+| `olist_order_items_dataset.csv` | Items per order with pricing |
+| `olist_order_payments_dataset.csv` | Payment type and installments |
+| `olist_order_reviews_dataset.csv` | Customer review scores |
+| `olist_products_dataset.csv` | Product dimensions and category |
+| `olist_sellers_dataset.csv` | Seller location info |
+| `olist_geolocation_dataset.csv` | ZIP code geolocation data |
 
-1. Data Collection
-2. Data Cleaning & Transformation
-3. Exploratory Data Analysis
-4. Machine Learning (Customer Segmentation)
-5. Dashboard Visualization
+---
 
-##  Key Insights
+## Data Cleaning
 
-* Top-performing states contribute majority revenue
-* Seasonal spikes observed in sales
-* Customer segmentation identifies high-value customers
+Handled in `notebooks/datacleaning.ipynb`:
 
+- Merged orders, customers, items, products, and payments into a single flat table
+- Standardized date columns and extracted `year` and `month` features
+- Filled or flagged missing product category names as `unknown`
+- Removed duplicates and irrelevant columns
+- Output saved to `data/processed/cleaned_ecommerce.csv`
 
-##  Output
+**Tools used:** Python, pandas, numpy, matplotlib, seaborn, scikit-learn
 
-* Clean dataset
-* ML segmentation
-* Power BI dashboard
+---
 
-##  Author
-   REVATHY
+## Power BI Dashboard
+
+The cleaned dataset was loaded into Power BI to build an interactive executive dashboard.
+
+### Overview Dashboard
+
+![Ecommerce Dashboard Overview](powerbi/Ecommerce_dashboard_overview.png)
+
+### Executive Dashboard
+
+![Ecommerce Executive Dashboard](powerbi/Ecommerce_exec_dashboard.png)
+
+The dashboard covers:
+- Revenue and order trends over time
+- Top product categories by sales
+- Customer distribution by state
+- Payment method breakdown
+- Delivery performance metrics
+
+The `.pbix` file is available at `powerbi/dash.pbix`.
+
+---
+
+## Getting Started
+
+1. Clone the repo
+2. Create a virtual environment and install dependencies:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+   ```
+3. Run `notebooks/datacleaning.ipynb` to reproduce the cleaned dataset
+4. Open `powerbi/dash.pbix` in Power BI Desktop to explore the dashboard
