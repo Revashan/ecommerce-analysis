@@ -21,6 +21,7 @@ A data analysis project built on the [Olist public e-commerce dataset](https://w
 
 ---
 
+
 ## Dataset
 
 The raw data consists of 8 relational tables from Olist:
@@ -84,3 +85,13 @@ The `.pbix` file is available at `powerbi/dash.pbix`.
    ```
 3. Run `notebooks/datacleaning.ipynb` to reproduce the cleaned dataset
 4. Open `powerbi/dash.pbix` in Power BI Desktop to explore the dashboard
+
+   Key Business Insights
+1️⃣ Revenue Concentration
+A small number of states contribute majority of total revenue
+
+👉 Insight: Business is geographically
+
+
+## Author
+Revathy Shanmugaraj
