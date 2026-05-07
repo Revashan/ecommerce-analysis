@@ -62,7 +62,7 @@ The cleaned dataset was loaded into Power BI to build an interactive executive d
 
 ### Executive Dashboard
 
-![Ecommerce Executive Dashboard](https://github.com/Revashan/ecommerce-data-analysis/blob/main/powerbi/dashboard-screenshot/Ecommerce_dashboard_overview.png)
+![Ecommerce Executive Dashboard](https://github.com/Revashan/ecommerce-data-analysis/blob/main/powerbi/dashboard-screenshot/Ecommerce_exec_dashboard.png)
 
 The dashboard covers:
 - Revenue and order trends over time
